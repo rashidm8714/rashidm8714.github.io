@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width-device-width, initial-scale-1.0">
+        <title>Personal Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/29e202705a.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/RD_logo.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#workk">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+            
+                    <h1> Hi, I'm Muhammed <span>Rashid </span> </h1>
+                    <p> Software Engineer</p>
+                </div>
+            </div>
+        </div>
+<!-------------------------About------------------------>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/IMG_0384.JPG">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title"> About Me</h1>
+                        <p> Hi Folks, my self Muhammed Rashid M, 
+                            Basically Im from Calicut , KERALA. Currently pursuing MCA at Department of Computer Application, Cusat, Cochin. 
+                         I completed my Bachelors in Computer Science from Farook Collage(Autonomus) Kozhikkode. </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                                <li><span>Web Development</span><br>Web app Development</li>
+                                <li><span>App Development</span><br>Building Android apps</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Web Development</span><br>Web development trainee <br> 30days </li>
+                                <li><span>App Development</span><br>Build Android app for Collage campus resource management</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>SSLC</span><br>Govt HSS Peringolam<br>Passout:2015 March <br> Percentage: 97%</li>
+                                <li><span>PlusTwo</span><br>Govt HSS Peringolam<br>Passout:2017 March <br> Percentage: 80%</li>
+                                <li><span>Graduation</span><br>Bachelor of Computer Science<br>Farook Collage (Autonomous)- University of Calicut<br>Passout:2020 March <br> CGPA:4.12/6</li>
+                                <li><span>Post-Graduation</span><br>Master of Computer Applications (MCA)<br>Cochin University of Science and Technology<br>Passout:2023 May <br> CGPA:8.2/10</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---------------------Services---------------->
+
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I design webpages and create atractive websites using
+                        html css and java scripts etc..</p>
+                        <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I design webpages and create UI design for android apps using flutter</p>
+                        <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-android"></i>
+                    <h2>App Design</h2>
+                    <p>I build Android Applications </p>
+                        <a href="#">Learn more</a>
+                </div>
+
+                </div>
+            </div>
+        </div>
+        <!---------------------portfolio---------------->
+        <div class="portfolio" id="workk">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png">
+                        <div class="layer">
+                            <h3>IMFC App</h3>
+                            <p>I Developed an Android Application for Infrastructure Management of my collage. Resourse booking, event notofication ect are the main functionalities. this application is build using android studio and firebase database</p>
+                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="images/work-2.png">
+                        <div class="layer">
+                            <h3>Attendance App</h3>
+                            <p>I build flask application  to keep track of student attendance </p>
+                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="images/work-3.png">
+                        <div class="layer">
+                            <h3>DocHour</h3>
+                            <p>DocHour is a web application built using the Django framework that enables users to book appointments with doctors 
+                                from anywhere in the world and engage in chat sessions with expert medical professionals. 
+                                The application allows users to search for doctors by specialty, location, and availability, 
+                                making it easy to find and book appointments that fit their needs.
+                                 Additionally, users can communicate with doctors through a chat interface, 
+                                 enabling them to ask questions, receive advice, and discuss their concerns in real-time. 
+                                 The DocHour project has the potential to make healthcare more accessible and convenient for users, 
+                                 as it eliminates the need for in-person appointments and allows users to receive medical guidance from the comfort of their own homes.</p>
+                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+            </div>
+
+        </div>
+         <!---------------------contact---------------->
+
+         <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i>rashidclt1996@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>8714132510</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/rashi510"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://instagram.com/_mr__rashi?igshid=ZDdkNTZiNTM="><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/muhammed-rashid-m-0a94001ba"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+
+                        </div>
+                        <a href="images/Rashid-Resume.pdf" download class="btn btn2" >Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your name" required>
+                            <input type="email" name="Email" placeholder="Your email" required>
+                            <textarea name="Message" placeholder="Your Message"  rows="6"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+
+                        <span id="msg"></span>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="copyright">
+                <p>Copyright <i class="fa fa-copyright" aria-hidden="true"></i>Muhammed Rashid M</p>
+            </div>
+            
+
+         </div>
+
+<!-----------scripts-and-functions------------->
+
+        <script>
+            var tablinks= document.getElementsByClassName("tab-links");
+            var tabcontents= document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab")
+
+            }
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+
+        </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzYPcrXjwrlWfmuOnI_FbW31dD6G0YMhjpxb7M2rwiaMQyG8caKzoMRpGE5WERUgoJG/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg= document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML= " Message sent succesfully"
+            setTimeout (function(){
+                msg.innerHTML= ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    </body>
+</html>
